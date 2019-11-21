@@ -5,6 +5,11 @@ pipeline {
         }
     }
     stages {
+        stage('Run NPM INSTALL') {
+            steps {
+                sh 'npm install'
+            }
+        }
         stage('Run NPM audit') {
             steps {
                 sh 'npm audit'
