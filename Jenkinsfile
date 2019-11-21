@@ -10,5 +10,15 @@ pipeline {
                 sh 'npm audit'
             }
         }
+        stage('Install dependencies') {
+            steps {
+                sh 'npm ci'
+            }
+        }
+        stage('Lint Code') {
+            steps {
+                sh 'npm run pretest'
+            }
+        }
     }
 }
