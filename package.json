@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "./node_modules/.bin/nodemon",
-    "pretest": "eslint --ignore-path .gitignore .eslintignore ."
+    "pretest": "eslint --ignore-path .gitignore .eslintignore .",
+    "start": "node server.js"
   },
   "author": "Murphy MABENGA",
   "license": "MIT",

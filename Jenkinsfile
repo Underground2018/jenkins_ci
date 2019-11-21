@@ -20,9 +20,9 @@ pipeline {
                 sh 'npm ci'
             }
         }
-        stage('Lint Code') {
+        stage('Test code') {
             steps {
-                sh 'npm run pretest'
+                sh 'npm run start'
             }
         }
     }
